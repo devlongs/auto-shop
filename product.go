@@ -11,15 +11,12 @@ type productProperties struct{
 	status bool
 }
 
-// type product []productProperties
+type product productProperties
 
-// car1 := productProperties{product:"bugatti", quantity: 10, price: 50, status: true}
-var productItem productProperties
-
-func (p productProperties) displayProduct(){
-	fmt.Printf("%v", p)
+func (p product) displayProduct(){
+	fmt.Printf("%v\n", p)
 }
 
-func (p productProperties) displayStatus(){
-	fmt.Printf("%v", p.status)
+func (p product) displayStatus(){
+	fmt.Printf("%v\n", p.status)
 }
